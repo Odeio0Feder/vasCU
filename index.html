@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AluraBooks</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+      <img src="img/vasco.png" alt="Logo da Alurabooks" class="container__imagem">
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
+      <a href="#"><img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem"></a>
+      <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Conheça algumas das estrelas do Vasco</h2>
+    <p class="banner__texto">Saiba quem são os monstros deste time!!!</p>
+    <input type="search" class="banner__pesquisa" placeholder="qual será nosso próximo título?">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">CRAQUES DO MOMENTO</h2>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/vegetti.jpg"
+            alt="filhos inesperados"></div>
+        <div class="swiper-slide"><img src="img/leo garden.webp"
+            alt="apostas online"></div>
+        <div class="swiper-slide"><img src="img/coutinho.jpeg" alt="abusar de delivery">
+        </div>
+
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+    </div>
+
+    <div class="card">
+      <div class="card__descrição">
+        <div class="descrição">
+          <h3 class="descrição__titulo">Vasco da Gama</h3>
+          <h2 class="descrição__titulo-livro">Giuseppe Cadura, 63</h2>
+          <p class="descrição__texto">Contínuo torcendo aqui da Italia, forças vasco!!!
+          </p>
+        </div>
+        <img src="img/vasco.png" class="tristeza" />
+      </div>
+      <div class="card__botões">
+        <ul class="botões">
+          <li class="botões__item">
+            <img src="img/Favoritos.svg" alt="Favoritar livro" />
+          </li>
+          <li class="botões__item">
+            <img src="img/Compras.svg" alt="Adicionar no carrinho de compras" />
+          </li>
+        </ul>
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+
+  </section>
+
+  <section class=”carrossel”>
+    <h2 class="carrossel__titulo">Mais vendidos</h2>
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/puma rodriguez.webp"
+            alt="sair para role"></div>
+        <div class="swiper-slide"><img src="img/payet.jpg" alt="jogos online">
+        </div>
+        <div class="swiper-slide"><img src="img/piton.jpg" alt="charlatões na internet">
+        </div>
+        <div class="swiper-slide"><img src="img/DVD.webp" alt="produtos desnecessários"></div>
+        <div class="swiper-slide"><img src="img/pele.jpg" alt="ser clt"></div>
+        <div class="swiper-slide"><img src="img/romario.webp" alt="tapa na pantera, soltar uma pipinha, chupar o dedo do gorila..."></div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+  </section>
+
+
+  <section class="contato">
+    <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+    <p class="contato__texto">
+     Quaisquer informações futuras sobre o time do povo estará disponível em nosso site.
+    </p>
+    <input type="email" placeholder="Cadastre seu e-mail" class="contato__email" />
+  </section>
+
+  <hr />
+
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">Site estúpido</h2>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+      },
+    });
+  </script>
+</body>
+
+</html>
